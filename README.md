@@ -30,7 +30,7 @@ SPLUNK_API: "https://api.{realm}.signalfx.com/v2/integration"
 ```
 to use `create_org.sh` you need to define following variables:
 
-```bash
+```yaml
 MY_FIRST_NAME: "Lukasz"
 MY_LAST_NAME: "Swolkien"
 MY_EMAIL: "uswolkien@splunk.com"
