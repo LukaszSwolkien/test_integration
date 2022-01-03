@@ -3,8 +3,8 @@ Test python and bash scripts to push data into o11y suite.
 
 ## Usage examples:
 
-Create your organisation using Splunk API (see ```create_org.sh```), setup access tokens and you can create test chart/dashboard to see test data.
-Remember to set all necessery secrets in the ```.secrets.yaml``` file
+Create your organisation using Splunk API (see `create_org.sh`), setup access tokens and you can create test chart/dashboard to see test data.
+Remember to set all necessery secrets in the `.secrets.yaml` file
 
 ```bash
 ./test_ingest.sh
@@ -27,8 +27,17 @@ SPLUNK_INGEST_TOKEN: "your_access_token"
 SPLUNK_API_TOKEN: "your_access_token"
 SPLUNK_METRICS_INGEST: "https://{ingest}.{realm}.signalfx.com"
 SPLUNK_API: "https://api.{realm}.signalfx.com/v2/integration"
-
 ```
+to use `create_org.sh` you need to define following variables:
+
+```bash
+MY_FIRST_NAME: "Lukasz"
+MY_LAST_NAME: "Swolkien"
+MY_EMAIL: "uswolkien@splunk.com"
+MY_ORG_NAME: "Swolsoft"
+MY_COMPANY_NAME: "GDI-test"
+```
+
 ### Note: you can skip below step if you don't want to play with python script
 Create virtual environment
 
