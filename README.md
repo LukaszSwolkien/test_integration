@@ -33,7 +33,7 @@ to use `create_org.sh` you need to define following variables:
 ```yaml
 MY_FIRST_NAME: "Lukasz"
 MY_LAST_NAME: "Swolkien"
-MY_EMAIL: "uswolkien@splunk.com"
+MY_EMAIL: "my_email@domain.com"
 MY_ORG_NAME: "Swolsoft"
 MY_COMPANY_NAME: "GDI-test"
 ```
