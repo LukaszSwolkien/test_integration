@@ -12,7 +12,13 @@ Remember to set all necessery secrets in the ```.secrets.yaml``` file
 ./market_cap.py ethereum
 ```
 
-market_cap python script collect publicly available market data on a given cryptocurrency and send selected metrics to the o11y suite
+market_cap python script collects publicly available market data on a given cryptocurrency and send selected metrics to the o11y suite.
+You can create run script periodicaly defining cron job, for example:
+
+```crontab -e```
+
+```*/1 * * * * /home/ec2-user/Devel/test_integration/test_ingest.sh```
+
 ## Setup project 
 You need to create .secrets.yaml file with tokens and endpoints defined, for example:
 
