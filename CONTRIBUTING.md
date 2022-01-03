@@ -50,10 +50,6 @@ Make your changes in a new git branch
 
 `git checkout -b my-fix-branch master`
 
-Before submitting a pull request please run unit tests.
-
-`python -m pytest tests/`
-
 Commit your changes using a descriptive commit message that follows [Commit format](#commit)
 
 `git commit --all`
