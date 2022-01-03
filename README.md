@@ -13,7 +13,7 @@ Remember to set all necessery secrets in the ```.secrets.yaml``` file
 ```
 
 market_cap python script collects publicly available market data on a given cryptocurrency and send selected metrics to the o11y suite.
-You can create run script periodicaly defining cron job, for example:
+You can run script periodicaly defining cron job, for example:
 
 ```crontab -e```
 
