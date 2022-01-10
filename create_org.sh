@@ -13,7 +13,7 @@ read_first_name() {
 
 read_last_name() {
     lastName=$(grep MY_LAST_NAME $secrets_file | tr -d '"'); 
-    lastName=${lastName//*MY_FIRST_NAME: /};
+    lastName=${lastName//*MY_LAST_NAME: /};
 }
 
 read_email() {
@@ -45,8 +45,8 @@ then
 
   payload='{"firstName": "'"$firstName"'", "lastName": "'"$lastName"'", "email":"'"$email"'", "orgName": "'"$orgName"'", "companyName": "'"$companyName"'"}'
   echo $endpoint
-
-  curl -X POST -H "Content-Type: application/json" -d "$payload" -i
+  echo $payload
+  echo curl -X POST $endpoint -H "Content-Type: application/json" -d "$payload" -i
 else
     echo "$secrets_file not found"
 fi
