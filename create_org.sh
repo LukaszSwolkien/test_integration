@@ -45,8 +45,8 @@ then
 
   payload='{"firstName": "'"$firstName"'", "lastName": "'"$lastName"'", "email":"'"$email"'", "orgName": "'"$orgName"'", "companyName": "'"$companyName"'"}'
   echo $endpoint
-  echo $payload
-  echo curl -X POST $endpoint -H "Content-Type: application/json" -d "$payload" -i
+#   echo $payload
+  curl -X POST $endpoint -H "Content-Type: application/json" -d "$payload" -i
 else
     echo "$secrets_file not found"
 fi
