@@ -13,8 +13,11 @@ Remember to set all necessery secrets in the `.secrets.yaml` file
 ./stock.py SPLK
 ```
 
-market_cap python script collects publicly available market data on a given cryptocurrency and send selected metrics to the o11y suite.
-You can run script periodicaly defining cron job, for example:
+crypto python script collects publicly available market data on a given cryptocurrency and sends selected metrics to the Splunk o11y suite.
+
+The python stock exchange script collects information about a given stock symbol and sends the selected data to the Splunk o11y suite
+
+You can run any script periodicaly as a cron job, for example:
 
 ```crontab -e```
 
