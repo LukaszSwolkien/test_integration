@@ -18,10 +18,13 @@ You can run script periodicaly defining cron job, for example:
 
 ```crontab -e```
 
-```*/1 * * * * /home/ec2-user/Devel/test_integration/test_ingest.sh```
+```vim
+*/1 * * * * /home/ec2-user/Devel/test_integration/test_ingest.sh
+5 4 * * 1-5 /home/ec2-user/Devel/test_integration/stock.py SPLK
+```
 
 ## Setup project 
-You need to create .secrets.yaml file with tokens and endpoints defined, for example:
+You need to create `.secrets.yaml` file with tokens and endpoints defined, for example:
 
 ```yaml
 SPLUNK_INGEST_TOKEN: "your_access_token"
