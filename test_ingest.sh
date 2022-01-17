@@ -21,8 +21,8 @@ then
     echo "* Test ingest endpoint: $ingest_endpoint"
     read_token_from_yaml
     value=$(shuf -i 1-100 -n 1)
-    server=$(uname -n)
-    payload='{"gauge": [{"metric": "heartbeat", "value": "'"$value"'", "dimensions": {"server": "'"$server"'"}}]}'
+    host=$(uname -n)
+    payload='{"gauge": [{"metric": "heartbeat", "value": "'"$value"'", "dimensions": {"host": "'"$host"'"}}]}'
     echo $payload
     echo "* Send test data: $payload"
     curl -X POST $ingest_endpoint -H "Content-Type: application/json" -H "X-SF-Token: $secret" -d "$payload" -i
