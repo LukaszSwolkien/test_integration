@@ -1,7 +1,7 @@
 #!./venv/bin/python
 """
 Usage: 
-    market_cap <coin_id>
+    crypto <coin_id>
 """
 
 

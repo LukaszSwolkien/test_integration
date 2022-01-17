@@ -9,7 +9,8 @@ Remember to set all necessery secrets in the `.secrets.yaml` file
 ```bash
 ./test_ingest.sh
 ./test_integrations.sh
-./market_cap.py ethereum
+./crypto.py ethereum
+./stock.py SPLK
 ```
 
 market_cap python script collects publicly available market data on a given cryptocurrency and send selected metrics to the o11y suite.
